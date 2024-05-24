@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riding With Pride</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#stories">Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="home">
+        <div class="hero">
+            <div class="overlay">
+                <h1>Riding With Pride</h1>
+                <p>The Cultural Significance and Evolution of Jeepney Art in the Philippines</p>
+                <a href="#explore" class="explore-button">Explore</a>
+                <p class="authors">Campos, Ceñido, Inukai, Lim</p>
+            </div>
+        </div>
+
+        <section id="explore" class="content">
+            <!-- About Section -->
+            <section id="about" class="about">
+                <h2>About</h2>
+                <div class="photos">
+                    <img src="old-photo.jpg" alt="Old Jeepney Photo">
+                    <img src="newer-photo.jpg" alt="Newer Jeepney Photo">
+                    <img src="latest-photo.jpg" alt="Latest Jeepney Photo">
+                </div>
+                <a href="#about-details" class="see-more-button">See More</a>
+            </section>
+
+            <!-- Gallery Section -->
+            <section id="gallery" class="gallery">
+                <h2>Gallery</h2>
+                <p>See how Philippine Jeepneys have evolved over the years</p>
+                <div class="years">
+                    <p>YEAR</p>
+                    <p>YEAR</p>
+                    <p>YEAR</p>
+                </div>
+                <a href="#gallery-details" class="see-more-button">See More</a>
+            </section>
+
+            <!-- Stories Section -->
+            <section id="stories" class="stories">
+                <h2>Stories</h2>
+                <img src="driver-photo.jpg" alt="Photo of Driver">
+                <p>“Lorem ipsum dolor sit amet, consectetuer adipiscing elit.”</p>
+                <div class="navigation">
+                    <button class="nav-button">&lt;</button>
+                    <button class="nav-button">&gt;</button>
+                </div>
+                <a href="#stories-details" class="see-more-button">See More</a>
+            </section>
+        </section>
+    </main>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
