@@ -186,3 +186,31 @@ button:hover, .explore-button:hover, .see-more-button:hover {
     transition: background-color 0.3s;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+
+.stories-section {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.story-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.story-container .driver-photo {
+    max-width: 200px;
+    border-radius: 50%;
+    background-color: #694736;
+}
+
+.story-container .driver-story {
+    background-color: #694736;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+
+}
