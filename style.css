@@ -92,7 +92,8 @@ header nav ul li a {
 
 .content h1 {
     font-size: 2.5em;
-    color: #333;
+    font-family: 'Pera';
+    color: #694736;
     margin-bottom: 40px;
 }
 
