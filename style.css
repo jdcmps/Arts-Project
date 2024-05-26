@@ -35,7 +35,7 @@ header nav ul li a {
 
 .hero {
     position: relative;
-    background: url('jeepney.jpg') no-repeat center center/cover;
+    background: url('./assets/jeepney.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -45,7 +45,7 @@ header nav ul li a {
 }
 
 .overlay {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(39, 24, 24, 0.5);
     padding: 20px;
     border-radius: 10px;
 }
@@ -189,6 +189,7 @@ button:hover, .explore-button:hover, .see-more-button:hover {
 
 .stories-section {
     margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -201,16 +202,25 @@ button:hover, .explore-button:hover, .see-more-button:hover {
     gap: 40px;
 }
 
-.story-container .driver-photo {
-    max-width: 200px;
-    border-radius: 50%;
-    background-color: #694736;
-}
-
 .story-container .driver-story {
     background-color: #694736;
     color: #ffffff;
     padding: 20px;
     border-radius: 20px;
 
+}
+
+.driver-photo img {
+    max-width: 200px;
+    border-radius: 25%;
+}
+
+.driver-photo figcaption {
+    font-style: italic;
+    font-size: 0.6em;
+    text-wrap: wrap;
+}
+
+.driver-photo figure {
+    margin: 0;
 }
