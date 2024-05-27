@@ -124,6 +124,22 @@ header nav ul li .selected {
     margin-bottom: 20px;
 }
 
+.year-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.years p {
+    font-family: 'Peralta', 'sans-serif';
+    font-size: 2.5em;
+    color: #694736;
+    padding: 0;
+    margin: 0;
+}
+
 .photos img, .stories img {
     max-width: 200px;
     border-radius: 10px;
