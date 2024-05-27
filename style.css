@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Barbra';
+    src: url('./fonts/Barbra-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Hertical';
+    src: url('./fonts/Hertical\ Sans\ Regular.ttf');
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -55,17 +65,17 @@ header nav ul li .selected {
 }
 
 .hero h1 {
-    font-size: 5em;
+    font-size: 6em;
     margin: 0;
-    font-family: 'Peralta', 'sans-serif';
+    font-family: 'Barbra', 'Peralta', 'sans-serif';
     color: #faecb6;
     text-shadow: 2px 2px 8px #FF470A;
 }
 
 .hero p {
-    padding: 20px;
     margin: 0;
     font-size: 1.5em;
+    padding: 15px;
 }
 
 .explore-button {
@@ -96,7 +106,7 @@ header nav ul li .selected {
 
 .content h1 {
     font-size: 5em;
-    font-family: 'Peralta', 'sans-serif';
+    font-family: 'Barbra', 'Peralta', 'sans-serif';
     color: #694736;
     margin-bottom: 40px;
     text-shadow: 2px 2px 8px #FF470A;
@@ -108,7 +118,7 @@ header nav ul li .selected {
 }
 
 .about h2, .gallery h2, .stories h2 {
-    font-family: 'Peralta', 'sans-serif';
+    font-family: 'Barbra', 'Peralta', 'sans-serif';
     font-size: 3.5em;
     color: #694736;
     margin-bottom: 20px;
@@ -133,8 +143,8 @@ header nav ul li .selected {
 }
 
 .years p {
-    font-family: 'Poetsen One', 'sans-serif';
-    font-size: .5em;
+    font-family: 'Hertical', 'Poetsen One', 'sans-serif';
+    font-size: 1.5em;
     color: #694736;
     padding: 0;
     margin: 0;
@@ -157,7 +167,7 @@ header nav ul li .selected {
 .photo-container p {
     font-size: 1.5em;
     color: #694736;
-    font-family: 'Poetsen One', 'sans-serif';
+    font-family: 'Hertical', 'Poetsen One', 'sans-serif';
     margin: 0;
     word-wrap: break-word;
 
