@@ -33,6 +33,10 @@ header nav ul li a {
     font-weight: bold;
 }
 
+header nav ul li .selected {
+    color: #694736;
+}
+
 .hero {
     position: relative;
     background: url('./assets/jeepney.jpg') no-repeat center center/cover;
