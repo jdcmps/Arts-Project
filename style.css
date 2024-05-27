@@ -224,3 +224,59 @@ button:hover, .explore-button:hover, .see-more-button:hover {
 .driver-photo figure {
     margin: 0;
 }
+
+.stories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-story-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #694736;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 1000px;
+}
+
+.home-story-container .nav-button {
+    flex: 1;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.home-story-container .nav-button:hover {
+    background-color: #f96635;
+}
+
+.home-story-container .driver-photo {
+    flex: 10;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-story-container .driver-quote {
+    flex: 10;
+}
+
+.home-story-container .driver-quote p { 
+    color: #FAECB6;
+}
+
+.home-story-container .driver-quote a {
+    background: #FAECB6;
+    color: #694736;
+}
+
+.driver-quote a:hover {
+    background: #f96635;
+    color: #FAECB6;
+}

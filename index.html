@@ -57,13 +57,17 @@
             <!-- Stories Section -->
             <section id="stories" class="stories">
                 <h2>Stories</h2>
-                <img src="driver-photo.jpg" alt="Photo of Driver">
-                <p>“Lorem ipsum dolor sit amet, consectetuer adipiscing elit.”</p>
-                <div class="navigation">
-                    <button class="nav-button">&lt;</button>
-                    <button class="nav-button">&gt;</button>
+                <div class="home-story-container">
+                    <button id="left-button" class="nav-button">&lt;</button>
+                    <div class="driver-photo">
+                        <img id="driver-photo" src="./assets/Mark.jpg" alt="Photo of Driver">
+                    </div>
+                    <div class="driver-quote">
+                        <p class="quote"> “Lorem ipsum dolor sit amet, consectetuer adipiscing elit.” </p>
+                        <a href="stories.html" class="see-more-button">READ MORE</a>
+                    </div>
+                    <button id="right-button" class="nav-button">&gt;</button>
                 </div>
-                <a href="stories.html" class="see-more-button">See More</a>
             </section>
         </section>
     </main>
@@ -77,6 +81,20 @@
                     behavior: 'smooth'
                 });
             });
+        });
+
+        // Change photo for Stories section
+        var images = ['./assets/Mark.jpg', './assets/Enrique.jpg', './assets/Sebastian.jpg', './assets/Tony.jpg']; // Add your images here
+        var index = 0;
+
+        document.getElementById('left-button').addEventListener('click', function() {
+            index = (index + images.length - 1) % images.length; // Move to the previous image
+            document.getElementById('driver-photo').src = images[index];
+        });
+
+        document.getElementById('right-button').addEventListener('click', function() {
+            index = (index + 1) % images.length; // Move to the next image
+            document.getElementById('driver-photo').src = images[index];
         });
     </script>
 </body>
