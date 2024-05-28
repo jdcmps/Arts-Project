@@ -82,7 +82,11 @@
                         <img id="driver-photo" src="./assets/Mark.jpg" alt="Photo of Driver">
                     </div>
                     <div class="driver-quote">
-                        <p class="quote"> “Lorem ipsum dolor sit amet, consectetuer adipiscing elit.” </p>
+                        <p id="question" class="question"> On Impact of Jeepney Phaseout on Philippine Society </p>
+                        <p id="quote" class="quote"> 
+                            "Unang-una maaapektuhan ang mga jeepney driver. Yung mga walang ibang alam na trabaho, yung pamilya nila, 
+                            sobrang laking epekto ng Jeepney Phaseout sa kanila."
+                        </p>
                         <a href="stories.html" class="see-more-button">READ MORE</a>
                     </div>
                     <button id="right-button" class="nav-button">&gt;</button>
@@ -104,16 +108,31 @@
 
         // Change photo for Stories section
         var images = ['./assets/Mark.jpg', './assets/Enrique.jpg', './assets/Sebastian.jpg', './assets/Tony.jpg']; // Add your images here
+        var quotes = ['"Unang-una maaapektuhan ang mga jeepney driver. Yung mga walang ibang alam na trabaho, yung pamilya nila, sobrang laking epekto ng Jeepney Phaseout sa kanila."', 
+                        '"Para ma-attract mga pasahero, para maipahayag ang kaniya-kaniyang propaganda o paniniwala."', 
+                        '"Pagandahin ang mga jeep, yung makina, yung mga sira, dapat ayusin. Para mapakita sa mga tao na maganda pa rin ang traditional na jeep."',
+                        '"Doon nakikita yung pagmamahal sa bayan kasi nilalagay natin dun yung bandera o gusto natin idesign sa jeep. Yung art natin naipapakita natin yung saloobin natin sa jeep at para maipahayag ang saloobin."' 
+        ];
+        var questions = ['On Impact of Jeepney Phaseout on Philippine Society', 
+                        'On Impact of Art on Jeepneys',
+                        'On Ways to preserve the Tradition of Jeepneys and Jeepney Art',
+                        "On Jeepney and Jeepney Art's influence to Filipino culture"
+        ];
+        
         var index = 0;
 
         document.getElementById('left-button').addEventListener('click', function() {
             index = (index + images.length - 1) % images.length; // Move to the previous image
             document.getElementById('driver-photo').src = images[index];
+            document.getElementById('quote').textContent = quotes[index];
+            document.getElementById('question').textContent = questions[index];
         });
 
         document.getElementById('right-button').addEventListener('click', function() {
             index = (index + 1) % images.length; // Move to the next image
             document.getElementById('driver-photo').src = images[index];
+            document.getElementById('quote').textContent = quotes[index];
+            document.getElementById('question').textContent = questions[index];
         });
     </script>
 </body>

@@ -263,21 +263,21 @@ button:hover, .explore-button:hover, .see-more-button:hover {
     flex-direction: column;
 }
 
-.driver-story .question {
+.story-container .driver-story .question, .home-story-container .driver-quote .question {
     font-family: 'Hertical', 'Poetsen One', 'sans-serif';
     font-size: 1em;
 }
 
-.driver-photo {
+.story-container .driver-photo {
     flex: 2;
 }
 
-.driver-photo img {
+.story-container .driver-photo img {
     max-width: 75%;
     border-radius: 25%;
 }
 
-.driver-photo .name {
+.story-container .driver-photo .name {
     font-family: 'Barbra', 'Peralta', 'sans-serif';
     font-size: 2.5em;
     text-shadow: 2px 2px 8px #93D3AE;
@@ -285,13 +285,13 @@ button:hover, .explore-button:hover, .see-more-button:hover {
     margin: 0;
 }
 
-.driver-photo figcaption {
+.story-container .driver-photo figcaption {
     font-style: italic;
     font-size: 0.6em;
     text-wrap: wrap;
 }
 
-.driver-photo figure {
+.story-container .driver-photo figure {
     margin: 0;
 }
 
@@ -331,6 +331,7 @@ button:hover, .explore-button:hover, .see-more-button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 25%;
 }
 
 .home-story-container .driver-quote {
