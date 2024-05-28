@@ -458,7 +458,7 @@ button:hover, .explore-button:hover, .see-more-button:hover {
 }
 
 .checkpoint div{
-    background-color: #694736;
+    background-color: #694734;
     border:2px solid #888;
     border-radius: 1em;
     padding: 1.5em;
@@ -466,7 +466,7 @@ button:hover, .explore-button:hover, .see-more-button:hover {
 
 .checkpoint p {
     line-height: 27px;
-    color: #694736;
+    color: #faecb6;
 }
 
 .checkpoint:nth-child(odd){
@@ -479,7 +479,7 @@ button:hover, .explore-button:hover, .see-more-button:hover {
     border-right:3px solid #888;
     padding-right: 3em;
     transform:translateX(-17em);
-
+    
 }
 .checkpoint:nth-child(odd)::before,
 .checkpoint:nth-child(even)::before{
@@ -521,4 +521,3 @@ button:hover, .explore-button:hover, .see-more-button:hover {
 .checkpoint:nth-child(even) div::before{
     right:-0.5em;
 }
-
