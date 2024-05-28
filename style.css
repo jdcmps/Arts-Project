@@ -299,6 +299,7 @@ button:hover, .explore-button:hover, .see-more-button:hover {
     text-shadow: 2px 2px 8px #93D3AE;
     padding: 0;
     margin: 0;
+    color:#694736;
 }
 
 .story-container .driver-photo figcaption {
@@ -382,7 +383,11 @@ button:hover, .explore-button:hover, .see-more-button:hover {
     align-items: center;
     flex-direction: column;    
     gap: 20px;
-    width: 500px;
+    width: 1000px;
+}
+
+.about-content img{
+    width: 400px;
 }
 
 .about-content .about-title { 
