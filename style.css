@@ -409,7 +409,6 @@ button:hover, .explore-button:hover, .see-more-button:hover {
     justify-content: center;
     align-items: center;
     gap: 20px;
-
 }
 
 .about-nav .about-nav-button {
@@ -420,4 +419,14 @@ button:hover, .explore-button:hover, .see-more-button:hover {
     border-radius: 20px;
     color: #FAECB6;
     font-weight: 600;
+}
+
+.about-nav-button.selected {
+    background-color: #FAECB6;
+    color: #694736;
+}
+
+.about-nav #selected {
+    background-color: #FAECB6;
+    color: #694736;
 }

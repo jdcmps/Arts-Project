@@ -28,7 +28,7 @@
             <div class="about-content-container">
                 <div class="about-content">
                     <div class="about-nav">
-                        <button class="about-nav-button">HISTORY</button>
+                        <button id="selected" class="about-nav-button">HISTORY</button>
                         <button class="about-nav-button">CULTURE</button>
                         <button class="about-nav-button">CURRENT</button>
                     </div>
@@ -73,6 +73,17 @@
     <script>
         document.querySelectorAll('.about-nav-button').forEach(button => {
             button.addEventListener('click', function() {
+                // TO change color depending on selected button
+
+                document.querySelectorAll('.about-nav-button').forEach(btn => {
+                    btn.removeAttribute('id');
+                });
+                document.querySelectorAll('.about-nav-button').forEach(btn => {
+                    btn.classList.remove('selected');
+                });
+                this.classList.add('selected');
+
+                // TO change content depending on selected button
                 var aboutItem = document.querySelector('.about-item');
                 switch (this.textContent) {
                     case 'HISTORY':
