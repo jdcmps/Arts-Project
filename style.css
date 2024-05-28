@@ -436,14 +436,24 @@ button:hover, .explore-button:hover, .see-more-button:hover {
     max-width:34.15em;
 }
 
-.checkpoint {
+.checkpoint{
+    font-family: 'Hertical';
+    color:#FAECB6;
     max-width:34em;
     padding-top: 2em;
     padding-bottom: 2em;
     position: relative;
 }
 
+.checkpoint img{
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 10px auto; 
+}
+
 .checkpoint div{
+    background-color: #694736;
     border:2px solid #888;
     border-radius: 1em;
     padding: 1.5em;
@@ -451,7 +461,7 @@ button:hover, .explore-button:hover, .see-more-button:hover {
 
 .checkpoint p {
     line-height: 27px;
-    color: #ccc
+    color: #694736;
 }
 
 .checkpoint:nth-child(odd){
