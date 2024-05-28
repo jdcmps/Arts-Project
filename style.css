@@ -158,13 +158,6 @@ header nav ul li .selected {
     gap: 20px;
 }
 
-.year-container img {
-    width: 250px;
-    border-radius: 10px;
-
-}
-
-
 .years p {
     font-family: 'Hertical', 'Poetsen One', 'sans-serif';
     font-size: 1.5em;
@@ -174,7 +167,7 @@ header nav ul li .selected {
 }
 
 .photos img, .stories img {
-    max-width: 250px;
+    max-width: 200px;
     border-radius: 10px;
 }
 
@@ -185,12 +178,6 @@ header nav ul li .selected {
     justify-content: center;
     align-items: center;
     gap: 20px
-}
-
-.photo-container img {
-    width: 300px;
-    border-radius: 10px;
-
 }
 
 .photo-container p {
@@ -471,7 +458,7 @@ button:hover, .explore-button:hover, .see-more-button:hover {
 }
 
 .checkpoint div{
-    background-color: #694736;
+    background-color: #694734;
     border:2px solid #888;
     border-radius: 1em;
     padding: 1.5em;
@@ -479,7 +466,7 @@ button:hover, .explore-button:hover, .see-more-button:hover {
 
 .checkpoint p {
     line-height: 27px;
-    color: #694736;
+    color: #faecb6;
 }
 
 .checkpoint:nth-child(odd){
@@ -492,7 +479,7 @@ button:hover, .explore-button:hover, .see-more-button:hover {
     border-right:3px solid #888;
     padding-right: 3em;
     transform:translateX(-17em);
-
+    
 }
 .checkpoint:nth-child(odd)::before,
 .checkpoint:nth-child(even)::before{
@@ -534,4 +521,3 @@ button:hover, .explore-button:hover, .see-more-button:hover {
 .checkpoint:nth-child(even) div::before{
     right:-0.5em;
 }
-
