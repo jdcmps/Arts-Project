@@ -25,20 +25,99 @@
         <section class="about-section">
             <h1>About</h1>
             <p class="subtitle">A brief background on Jeepneys and Jeepney Art Culture</p>
-            <div class="about-content">
-                <div class="about-item">
-                    <p class="about-title">WHAT IS A JEEPNEY AND JEEPNEY ART</p>
-                </div>
-                <div class="about-nav">
-                    <button class="nav-button">HISTORY</button>
-                    <button class="nav-button">CULTURE</button>
-                    <button class="nav-button">CURRENT</button>
+            <div class="about-content-container">
+                <div class="about-content">
+                    <div class="about-nav">
+                        <button class="about-nav-button">HISTORY</button>
+                        <button class="about-nav-button">CULTURE</button>
+                        <button class="about-nav-button">CURRENT</button>
+                    </div>
+                    <div class="about-item">
+                        <p class="about-title">The History of Jeepneys in the Philippines</p>
+                        <p class="about-info">
+                            In previous years, the Philippine railway system served as the country’s main mode of transportation. 
+                            It was the first avenue of transportation that created more mobility in the Northern and Central parts of 
+                            Luzon, ultimately aiding in the region’s economic growth. However, the railway systems were left significantly 
+                            damaged after World War II, and the slow reconstruction of the railway systems led to an increased demand for 
+                            public road transportation. As a result, numerous modes of public land transportation emerged, including the 
+                            Jeepneys in the early 1950s. 
+                        </p>
+                        <p class="about-info">
+                            Jeepneys originated from the military vehicles that the United States left behind in the country after World 
+                            War II. The surplus of military Willys General Purpose (GP) vehicles and trucks left behind by the Americans 
+                            was used to address the demand for public transportation. The jeeps were converted and repurposed into public 
+                            transportation vehicles, giving birth to the jeepneys as we know them today. The word jeepney originated from 
+                            the words “jitney”, a then-popular American term for a taxicab, and “jeep”, from the military abbreviation of 
+                            “GP” meaning General Purpose (vehicle). 
+                        </p>
+                        <p class="about-info">
+                            The earliest jeepneys called the auto calesas (AC) were only able to accommodate 6-8 passengers and were able 
+                            to travel freely on any route. They were soon outphased by the Public Utility Jeepneys that we see today. These 
+                            jeepneys can house almost up to 20 passengers, but unlike the previous ACs, PUJs only travel on chosen fixed 
+                            routes.                         
+                        </p>
+                        <p class="about-info">
+                            Since the 1950s, jeepney models have been heavily mass-produced, most notably by Sarao motors, eventually 
+                            turning the jeepney into the most common mode of public transportation in the country. They’ve even been 
+                            dubbed as the kings of the road because of their large frames and aggressive road presence. Now, jeepneys 
+                            have immersed themselves to be a significant part of Filipino culture. Aside from the convenience that jeepneys 
+                            bring to the everyday Filipino, jeepneys have also been appreciated for their aesthetic side because of their 
+                            visible jeepney art.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <a href="gallery.html" class="see-more-button">GALLERY</a>
         </section>
     </div>
 
-    <script src="scripts.js"></script>
+    <script>
+        document.querySelectorAll('.about-nav-button').forEach(button => {
+            button.addEventListener('click', function() {
+                var aboutItem = document.querySelector('.about-item');
+                switch (this.textContent) {
+                    case 'HISTORY':
+                        aboutItem.innerHTML = `<p class="about-title">The History of Jeepneys in the Philippines</p>
+                        <p class="about-info">
+                            In previous years, the Philippine railway system served as the country’s main mode of transportation. 
+                            It was the first avenue of transportation that created more mobility in the Northern and Central parts of 
+                            Luzon, ultimately aiding in the region’s economic growth. However, the railway systems were left significantly 
+                            damaged after World War II, and the slow reconstruction of the railway systems led to an increased demand for 
+                            public road transportation. As a result, numerous modes of public land transportation emerged, including the 
+                            Jeepneys in the early 1950s. 
+                        </p>
+                        <p class="about-info">
+                            Jeepneys originated from the military vehicles that the United States left behind in the country after World 
+                            War II. The surplus of military Willys General Purpose (GP) vehicles and trucks left behind by the Americans 
+                            was used to address the demand for public transportation. The jeeps were converted and repurposed into public 
+                            transportation vehicles, giving birth to the jeepneys as we know them today. The word jeepney originated from 
+                            the words “jitney”, a then-popular American term for a taxicab, and “jeep”, from the military abbreviation of 
+                            “GP” meaning General Purpose (vehicle). 
+                        </p>
+                        <p class="about-info">
+                            The earliest jeepneys called the auto calesas (AC) were only able to accommodate 6-8 passengers and were able 
+                            to travel freely on any route. They were soon outphased by the Public Utility Jeepneys that we see today. These 
+                            jeepneys can house almost up to 20 passengers, but unlike the previous ACs, PUJs only travel on chosen fixed 
+                            routes.                         
+                        </p>
+                        <p class="about-info">
+                            Since the 1950s, jeepney models have been heavily mass-produced, most notably by Sarao motors, eventually 
+                            turning the jeepney into the most common mode of public transportation in the country. They’ve even been 
+                            dubbed as the kings of the road because of their large frames and aggressive road presence. Now, jeepneys 
+                            have immersed themselves to be a significant part of Filipino culture. Aside from the convenience that jeepneys 
+                            bring to the everyday Filipino, jeepneys have also been appreciated for their aesthetic side because of their 
+                            visible jeepney art.
+                        </p>
+                        `;
+                        break;
+                    case 'CULTURE':
+                        aboutItem.innerHTML = '<p class="about-title">Jeepney Art and its Significance in Filipino Culture</p>';
+                        break;
+                    case 'CURRENT':
+                        aboutItem.innerHTML = '<p class="about-title">Current Status of Jeepneys and Jeepney Art in the Philippines Amid the Phase-Out</p>';
+                        break;
+                }
+            });
+        });
+    </script>
 </body>
 </html>

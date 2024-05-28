@@ -367,3 +367,57 @@ button:hover, .explore-button:hover, .see-more-button:hover {
     background: #f96635;
     color: #FAECB6;
 }
+
+.about-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    gap: 20px;
+    width: 500px;
+}
+
+.about-content .about-title { 
+    font-family: 'Hertical', 'Poetsen One', 'sans-serif';
+}
+
+.about-content .about-item {
+    flex: 10;
+    background-color: #694736;
+    color: #FAECB6;
+    padding: 20px;
+    border-radius: 20px;
+}
+.about-content .about-nav {
+    display: flex;
+    background-color: #694736;
+    border-radius: 20px;
+    padding: 10px;
+    gap: 5px;
+}
+
+.about-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.about-nav .about-nav-button {
+    /* background-color: #FAECB6; */
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    color: #FAECB6;
+    font-weight: 600;
+}
