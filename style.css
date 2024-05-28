@@ -74,12 +74,18 @@ header nav ul li .selected {
     gap: 5px;
 }
 
+.overlay p {
+    font-weight: 600;
+    color: #faecb6;
+}
+
 .hero h1 {
     font-size: 6em;
     margin: 0;
     font-family: 'Barbra', 'Peralta', 'sans-serif';
     color: #faecb6;
     text-shadow: 2px 2px 8px #FF470A;
+    
 }
 
 .hero p {
@@ -152,6 +158,13 @@ header nav ul li .selected {
     gap: 20px;
 }
 
+.year-container img {
+    width: 250px;
+    border-radius: 10px;
+
+}
+
+
 .years p {
     font-family: 'Hertical', 'Poetsen One', 'sans-serif';
     font-size: 1.5em;
@@ -161,7 +174,7 @@ header nav ul li .selected {
 }
 
 .photos img, .stories img {
-    max-width: 200px;
+    max-width: 250px;
     border-radius: 10px;
 }
 
@@ -172,6 +185,12 @@ header nav ul li .selected {
     justify-content: center;
     align-items: center;
     gap: 20px
+}
+
+.photo-container img {
+    width: 300px;
+    border-radius: 10px;
+
 }
 
 .photo-container p {
@@ -293,6 +312,7 @@ button:hover, .explore-button:hover, .see-more-button:hover {
     text-shadow: 2px 2px 8px #93D3AE;
     padding: 0;
     margin: 0;
+    color:#694736;
 }
 
 .story-container .driver-photo figcaption {
@@ -361,3 +381,157 @@ button:hover, .explore-button:hover, .see-more-button:hover {
     background: #f96635;
     color: #FAECB6;
 }
+
+.about-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    gap: 20px;
+    width: 1000px;
+}
+
+.about-content img{
+    width: 400px;
+}
+
+.about-content .about-title { 
+    font-family: 'Hertical', 'Poetsen One', 'sans-serif';
+}
+
+.about-content .about-item {
+    flex: 10;
+    background-color: #694736;
+    color: #FAECB6;
+    padding: 20px;
+    border-radius: 20px;
+}
+.about-content .about-nav {
+    display: flex;
+    background-color: #694736;
+    border-radius: 20px;
+    padding: 10px;
+    gap: 5px;
+}
+
+.about-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-nav .about-nav-button {
+    /* background-color: #FAECB6; */
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    color: #FAECB6;
+    font-weight: 600;
+}
+
+.about-nav-button.selected {
+    background-color: #FAECB6;
+    color: #694736;
+}
+
+.about-nav #selected {
+    background-color: #FAECB6;
+    color: #694736;
+}
+
+.timeline {
+    margin: 5em auto;
+    max-width:34.15em;
+}
+
+.checkpoint{
+    font-family: 'Hertical';
+    color:#FAECB6;
+    max-width:34em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+}
+
+.checkpoint img{
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 10px auto; 
+}
+
+.checkpoint div{
+    background-color: #694736;
+    border:2px solid #888;
+    border-radius: 1em;
+    padding: 1.5em;
+}
+
+.checkpoint p {
+    line-height: 27px;
+    color: #694736;
+}
+
+.checkpoint:nth-child(odd){
+    border-left: 3px solid #888;
+    padding-left:3em;
+    transform: translateX(17em);
+}
+
+.checkpoint:nth-child(even){
+    border-right:3px solid #888;
+    padding-right: 3em;
+    transform:translateX(-17em);
+
+}
+.checkpoint:nth-child(odd)::before,
+.checkpoint:nth-child(even)::before{
+    content: '';
+    background: #888;
+    width: 3em;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.checkpoint:nth-child(odd)::before{
+    left:0;
+}
+
+.checkpoint:nth-child(even)::before{
+    right:0;
+}
+
+.checkpoint:nth-child(odd) div::before,
+.checkpoint:nth-child(even) div::before{
+    content:'';
+    background: #694736;
+    box-shadow: 0 0 0.5em #93D3AE;
+    width:0.8em;
+    height:0.8em;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    border-radius:50%;
+
+}
+
+.checkpoint:nth-child(odd) div::before{
+    left:-0.5em;
+}
+
+.checkpoint:nth-child(even) div::before{
+    right:-0.5em;
+}
+

@@ -23,22 +23,146 @@
     
     <div class="content">
         <section class="about-section">
-            <h1>ABOUT</h1>
-            <p class="subtitle">A brief background on jeepneys and jeepney art culture</p>
-            <div class="about-content">
-                <div class="about-item">
-                    <p class="about-title">WHAT IS A JEEPNEY AND JEEPNEY ART</p>
-                </div>
-                <div class="about-nav">
-                    <button class="nav-button">HISTORY</button>
-                    <button class="nav-button">CULTURE</button>
-                    <button class="nav-button">CURRENT</button>
+            <h1>About</h1>
+            <p class="subtitle">A brief background on Jeepneys and Jeepney Art Culture</p>
+            <div class="about-content-container">
+                <div class="about-content">
+                    <div class="about-nav">
+                        <button id="selected" class="about-nav-button">HISTORY</button>
+                        <button class="about-nav-button">CULTURE</button>
+                        <button class="about-nav-button">CURRENT</button>
+                    </div>
+                    <div class="about-item">
+                        <p class="about-title">The History of Jeepneys in the Philippines</p>
+                        <p class="about-info">
+                            In previous years, the Philippine railway system served as the country’s main mode of transportation. 
+                            It was the first avenue of transportation that created more mobility in the Northern and Central parts of 
+                            Luzon, ultimately aiding in the region’s economic growth. However, the railway systems were left significantly 
+                            damaged after World War II, and the slow reconstruction of the railway systems led to an increased demand for 
+                            public road transportation. As a result, numerous modes of public land transportation emerged, including the 
+                            Jeepneys in the early 1950s. 
+                        </p>
+                        <p class="about-info">
+                            Jeepneys originated from the military vehicles that the United States left behind in the country after World 
+                            War II. The surplus of military Willys General Purpose (GP) vehicles and trucks left behind by the Americans 
+                            was used to address the demand for public transportation. The jeeps were converted and repurposed into public 
+                            transportation vehicles, giving birth to the jeepneys as we know them today. The word jeepney originated from 
+                            the words “jitney”, a then-popular American term for a taxicab, and “jeep”, from the military abbreviation of 
+                            “GP” meaning General Purpose (vehicle). 
+                        </p>
+
+                        <img src = assets/about1.jpg>
+                        <p class="image-source">Image Source: <a href="https://www.flickr.com/photos/johntewell/50014989871">flickr</a></p>
+
+                        <p class="about-info">
+                            Since the 1950s, jeepney models have been heavily mass-produced, most notably by Sarao motors, eventually 
+                            turning the jeepney into the most common mode of public transportation in the country. They’ve even been 
+                            dubbed as the kings of the road because of their large frames and aggressive road presence. Now, jeepneys 
+                            have immersed themselves to be a significant part of Filipino culture. Aside from the convenience that jeepneys 
+                            bring to the everyday Filipino, jeepneys have also been appreciated for their aesthetic side because of their 
+                            visible jeepney art.
+                        </p>
+
+                        <img src = assets/about2.jpg>
+                        <p class="image-source">Image Source: <a href="https://amommabroad.com/blog/2016/11/29/jeepney-factory-sarao-motors">amommabroad</a></p>
+                    </div>
                 </div>
             </div>
-            <a href="gallery.html" class="see-more-button">GALLERY</a>
         </section>
     </div>
 
-    <script src="scripts.js"></script>
+    <script>
+        document.querySelectorAll('.about-nav-button').forEach(button => {
+            button.addEventListener('click', function() {
+                // TO change color depending on selected button
+
+                document.querySelectorAll('.about-nav-button').forEach(btn => {
+                    btn.removeAttribute('id');
+                });
+                document.querySelectorAll('.about-nav-button').forEach(btn => {
+                    btn.classList.remove('selected');
+                });
+                this.classList.add('selected');
+
+                // TO change content depending on selected button
+                var aboutItem = document.querySelector('.about-item');
+                switch (this.textContent) {
+                    case 'HISTORY':
+                        aboutItem.innerHTML = `<p class="about-title">The History of Jeepneys in the Philippines</p>
+                        <p class="about-info">
+                            In previous years, the Philippine railway system served as the country’s main mode of transportation. 
+                            It was the first avenue of transportation that created more mobility in the Northern and Central parts of 
+                            Luzon, ultimately aiding in the region’s economic growth. However, the railway systems were left significantly 
+                            damaged after World War II, and the slow reconstruction of the railway systems led to an increased demand for 
+                            public road transportation. As a result, numerous modes of public land transportation emerged, including the 
+                            Jeepneys in the early 1950s. 
+                        </p>
+                        <p class="about-info">
+                            Jeepneys originated from the military vehicles that the United States left behind in the country after World 
+                            War II. The surplus of military Willys General Purpose (GP) vehicles and trucks left behind by the Americans 
+                            was used to address the demand for public transportation. The jeeps were converted and repurposed into public 
+                            transportation vehicles, giving birth to the jeepneys as we know them today. The word jeepney originated from 
+                            the words “jitney”, a then-popular American term for a taxicab, and “jeep”, from the military abbreviation of 
+                            “GP” meaning General Purpose (vehicle). 
+                        </p>
+                        <img src = assets/about1.jpg>
+                        <p class="image-source">Image Source: <a href="https://www.flickr.com/photos/johntewell/50014989871">flickr</a></p>
+
+                        <p class="about-info">
+                            Since the 1950s, jeepney models have been heavily mass-produced, most notably by Sarao motors, eventually 
+                            turning the jeepney into the most common mode of public transportation in the country. They’ve even been 
+                            dubbed as the kings of the road because of their large frames and aggressive road presence. Now, jeepneys 
+                            have immersed themselves to be a significant part of Filipino culture. Aside from the convenience that jeepneys 
+                            bring to the everyday Filipino, jeepneys have also been appreciated for their aesthetic side because of their 
+                            visible jeepney art.
+                        </p>
+                        <img src = assets/about2.jpg>
+                        <p class="image-source">Image Source: <a href="https://amommabroad.com/blog/2016/11/29/jeepney-factory-sarao-motors">amommabroad</a></p>
+                        `;
+                        break;
+                    case 'CULTURE':
+                        aboutItem.innerHTML = `<p class="about-title">Jeepney Art and its Significance in Filipino Culture</p>
+                        <p class="about-info">
+                            Jeepneys are known for their loud and eye-catching designs. Thanks to the different colors, paintings, stickers, and other accessories that jeepneys are decorated with, the jeepneys’ presence brings color to the streets they travel to. The decorations jeepneys have on their vehicle are called jeepney art. The themes jeepney art encompasses are vast, as the influences of jeepney art can be almost anything, ranging from religion, nationalism, celebrities, superheroes, NBA players, family, and many more
+                        </p>
+                        <img src = assets/about3.jpg>
+                        <p class="image-source">Image Source: <a href="https://lakansining.wordpress.com/wp-content/uploads/2018/12/05-Our-Lady-of-the-L.A.-Lakers.jpg">lakansining</a></p>
+                        <p class="about-info">
+                            The jeepney’s wonderful aesthetics serve not only as a form of expression for the jeepney drivers and owners but also as a reflection of the beauty and richness of Filipino culture. The jeepneys on the streets are like moving artworks conveying messages and ideas from the Filipino people. For example, the frequent display of religious themes through the designs composed of biblical saints, images, and texts on jeepney art expresses the deep faith and connection between Filipinos and Catholicism.
+ 
+                        </p>
+                        <img src = assets/about4.png>
+                        <p class="image-source">Image Source: <a href="https://archive.felixfeatures.com/image/I0000BuUoxK.2GxI">felixfeatures</a></p>
+
+                        <p class="about-info">
+                            The nationalist themes on jeepneys showcased by Philippine flags, national heroes, and historical figures highlight the patriotism and heritage that Filipinos live out in their daily lives. Similarly, the athletes, celebrities, superheroes, and other related pop culture references on jeepneys display the unique personalities and interests of jeepney drivers. The family-oriented designs and decorations reflect the importance of family and personal relationships in Filipino cultures, and society.
+                        </p>
+                        
+                        <p class="about-info">
+                            The creative and iconic designs of jeepney art have become an important part of Filipino culture. The vast themes and lively designs of jeepneys creatively capture the country’s history, values, and identity, ultimately transforming these vehicles into moving pieces of art. Originating as a temporary solution to that transport solution, the jeepneys evolved into a significant element of public transportation and Filipino culture. 
+                        </p>
+                        `;
+                        break;
+                    case 'CURRENT':
+                        aboutItem.innerHTML = `<p class="about-title">Current Status of Jeepneys and Jeepney Art in the Philippines Amid the Phase-Out</p>
+                        <p class="about-info">
+                            Currently, jeepneys are facing an uncertain future ever since the proposal of the 2017 PUV Modernization Program (PUVMP). The program aims to improve and re-organize the nation’s public transportation system by tackling its apparent flaws. The program has targeted the jeepneys in particular because of their poor maintenance, and safety record. The lack of safety features and the enhanced carbon emissions of the old jeepney units are among the reasons behind the desire to modernize the current public utility jeepney (PUJ). The original target date for the complete implementation of modernized public utility vehicles in the country was 2020. However, the program's implementation has continuously faced delays due to logistic concerns and resistance from operators.
+                        </p>
+                        <img src = assets/about5.jpg>
+                        <p class="image-source">Image Source: <a href="https://goflatoutph.com/2018/07/18/hino-motors-philippines-first-to-roll-out-modern-jeepneys-to-transport-cooperatives/">goflatoutph</a></p>
+
+                        <p class="about-info">
+                            Despite the good intent behind the PUV modernization program, many problems arise from its application. The modern PUV units are expensive, and the government lacks sufficient payment programs to help support the shift of jeepney drivers and operators to the newer units. The cost of modern PUV units ranges from ₱1.4 million to ₱2.2 million, a price range that may be too expensive for jeepney drivers who earn an average of ₱500 to ₱800 per day. The current payment plans available revolve around 5% to 10% down payments along with loans that subsequently put operators under large debt that could take a lifetime to settle.
+
+                        </p>
+                        <p class="about-info">
+                            Once fully implemented, the PUV modernization program will eventually replace the iconic jeepney models with its modernized counterparts. A big part of Filipino culture, including the vibrant and unique jeepney art will be removed from the roads that it once roamed on, erasing a form of moving art that reflected the individuality and culture of the Filipino people. Now, we are left with the challenge of finding a way to honor and preserve the jeepney’s artistic and cultural legacy to ensure that an important part of our culture will not be completely lost.
+                        </p>    
+                        `;
+                        break;
+                }
+            });
+        });
+    </script>
 </body>
 </html>
