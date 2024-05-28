@@ -74,12 +74,18 @@ header nav ul li .selected {
     gap: 5px;
 }
 
+.overlay p {
+    font-weight: 600;
+    color: #faecb6;
+}
+
 .hero h1 {
     font-size: 6em;
     margin: 0;
     font-family: 'Barbra', 'Peralta', 'sans-serif';
     color: #faecb6;
     text-shadow: 2px 2px 8px #FF470A;
+    
 }
 
 .hero p {
