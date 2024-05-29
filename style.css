@@ -362,6 +362,7 @@ button:hover, .explore-button:hover, .see-more-button:hover {
     justify-content: center;
     align-items: center;
     border-radius: 25%;
+    padding: 30px;
 }
 
 .home-story-container .driver-quote {
