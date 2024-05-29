@@ -158,12 +158,10 @@ header nav ul li .selected {
     gap: 20px;
 }
 
-.year-container img {
-    width: 250px;
-    border-radius: 10px;
-
+.year-container img{
+    width:250px;
+    border-radius:10px;
 }
-
 
 .years p {
     font-family: 'Hertical', 'Poetsen One', 'sans-serif';
@@ -187,12 +185,10 @@ header nav ul li .selected {
     gap: 20px
 }
 
-.photo-container img {
-    width: 300px;
-    border-radius: 10px;
-
+.photo-container img{
+    width:300px;
+    border-radius:10px;
 }
-
 .photo-container p {
     font-size: 1.5em;
     color: #694736;
@@ -480,7 +476,7 @@ button:hover, .explore-button:hover, .see-more-button:hover {
 
 .checkpoint p {
     line-height: 27px;
-    color: #694736;
+    color: #faecb6;
 }
 
 .checkpoint:nth-child(odd){
@@ -493,7 +489,7 @@ button:hover, .explore-button:hover, .see-more-button:hover {
     border-right:3px solid #888;
     padding-right: 3em;
     transform:translateX(-17em);
-
+    
 }
 .checkpoint:nth-child(odd)::before,
 .checkpoint:nth-child(even)::before{
