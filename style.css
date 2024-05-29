@@ -535,3 +535,17 @@ button:hover, .explore-button:hover, .see-more-button:hover {
     right:-0.5em;
 }
 
+.references .reference-header {
+    font-family: 'Hertical', 'Poetsen One', 'sans-serif';
+    font-size: 1.5em;
+}
+
+.references ul {
+    text-align: left;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
